@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Hello, World!")
+            Text("Hello, World!").font(Font.largeTitle)
+            ImageCircle(url: Image("BG"))
+            ImageCircle(url: Image("Drone"))
+        }
     }
 }
 
